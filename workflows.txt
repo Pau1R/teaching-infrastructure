@@ -1,0 +1,73 @@
+
+teacher algorithm:
+0) determine lesson scope
+1) outline theory in xmind
+2) create a summary of the theory
+3) split theory to four blocks of knowledge for transfer
+4) run lesson creation
+
+--- LESSON CREATION ---
+
+initial data:
+- theory summary
+- student average grade, difficulty modifier, overall difficulty modifier
+- task time limit (add a safe margin of 3 minutes for pr)
+
+expected result:
+- lesson:
+  - create the lesson folder (e.g. Урок 5 (20.11). Циклы) in python2025_tasks lessons folder
+  - create a lesson description in the folder (e.g. Урок 5.md)
+- tasks:
+  - for each block of theory create a folder (e.g. 1)
+  - in each folder create individualized tasks for each student (check for errors after creating)
+- file mini_test.md in lesson folder with link to onlinetestpad.com test
+- homework:
+  - create a homework folder in lessons folder
+  - create individualized homework for each student
+
+--- MINI TEST CREATION ---
+
+1) generate questions and answers
+2) interact with onlinetestpad to create the test. Open it.
+3) save test link to mini_test.md
+
+--- LESSON RUNNING ---
+python2026 lesson file contains links that activate each task and mini test
+0) theory transfered
+1) corresponding link pressed
+2) task links created in each students github repo (on press - site opens with discription)
+3) on link press task descriptions loaded to site from students repo
+4) timer started
+... student working ...
+5) pr created
+6) run copilot analysis:
+  - do checks:
+    - correspondance to task description
+    - errors
+    - code style
+  - generate report:
+    - description of the errors
+    - success percentage
+  - save success percentage for lesson grading
+  - accumulate report to student progress info
+   (generate success percentage)
+  - ask student if he thinks the success percentage was to low
+7) if more comments made in pr - notify teacher
+8) if task submitted too late - set success percentage to 0.
+... all iterations finished ...
+mini_test:
+1) corresponding link pressed - students repo gets test link
+... student working ...
+2) test result sent to telegram
+3) test result appended to student
+4) lesson grade for student becomes available (probably via telegram bot)
+Assigning grades:
+- subtract from auto value if student behaved badly or add if very good (prefere topcoins for this). 
+- give topcoins for activeness
+
+--- HOMEWORK ---
+- don't limit execution time
+- if submission time is exceeded - lower grade correspondingly.
+- keep track of two grades:
+  - tech grade
+  - omni grade (with subtractions)
