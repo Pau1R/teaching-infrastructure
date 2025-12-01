@@ -21,9 +21,17 @@ expected result:
   - for each block of theory create a folder (e.g. 1)
   - in each folder create individualized tasks for each student (check for errors after creating)
 - file mini_test.md in lesson folder with link to onlinetestpad.com test
+
+--- HOMEWORK CREATION ---
 - homework:
   - create a homework folder in lessons folder
   - create individualized homework for each student
+
+- don't limit execution time
+- if submission time is exceeded - lower grade correspondingly.
+- keep track of two grades:
+  - tech grade
+  - omni grade (with subtractions)
 
 --- MINI TEST CREATION ---
 
@@ -65,9 +73,4 @@ Assigning grades:
 - subtract from auto value if student behaved badly or add if very good (prefere topcoins for this). 
 - give topcoins for activeness
 
---- HOMEWORK ---
-- don't limit execution time
-- if submission time is exceeded - lower grade correspondingly.
-- keep track of two grades:
-  - tech grade
-  - omni grade (with subtractions)
+
